@@ -15,7 +15,7 @@ class TaskController {
 
     // validate form input
     const validation = await validate(request.all(), {
-      title: 'required|min:3|max:255'
+      title: 'required|min:2|max:255'
     })
 
     // show error messages upon validation fail
