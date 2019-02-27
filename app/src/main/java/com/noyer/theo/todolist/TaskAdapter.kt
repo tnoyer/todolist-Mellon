@@ -26,13 +26,13 @@ class TaskAdapter(val items : ArrayList<String>, val context: Context) : Recycle
         )
     }
 
-    // Binds each animal in the ArrayList to a view
+    // Binds each task in the ArrayList to a view
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder?.tvTaskType?.text = items.get(position)
     }
 }
 
 class ViewHolder (view: View) : RecyclerView.ViewHolder(view) {
-    // Holds the TextView that will add each animal to
+    // Holds the TextView that will add each tasks to
     val tvTaskType = view.tv_task_type
 }
