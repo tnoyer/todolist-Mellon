@@ -20,7 +20,7 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                        android:id="@+id/item_checkbox"
+                        android:id="@+id/list_item_checkbox"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         />
@@ -34,7 +34,7 @@
                         />
 
                 <Button
-                        android:id="@+id/item_delete"
+                        android:id="@+id/list_item_delete_btn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="X"
