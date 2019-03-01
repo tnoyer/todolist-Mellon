@@ -6,11 +6,11 @@ import android.support.v7.widget.LinearLayoutManager
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.Button
-import android.widget.CheckBox
 import android.widget.EditText
-import android.widget.TextView
 import com.noyer.theo.todolist.R
 import kotlinx.android.synthetic.main.activity_main.*
+
+
 
 class MainActivity : AppCompatActivity(){
 
@@ -22,11 +22,8 @@ class MainActivity : AppCompatActivity(){
         setContentView(R.layout.activity_main)
 
         //initialisation des variables
-        var mTitleForm = findViewById<TextView>(R.id.activity_main_title_form)
         var mTaskInput = findViewById<EditText>(R.id.activity_main_task_input)
         var mValidButton = findViewById<Button>(R.id.activity_main_valid_btn)
-        var mTitleList = findViewById<TextView>(R.id.activity_main_title_list)
-        var mDeleteButton = findViewById<Button>(R.id.list_item_delete_btn)
 
         mValidButton.isEnabled = false
 
