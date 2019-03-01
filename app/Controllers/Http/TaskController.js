@@ -9,7 +9,8 @@ class TaskController {
   async index ({ view }) {
 
     const tasks = await Task.all()
-    return view.render('tasks.index', { tasks: tasks.toJSON() })
+    const taskJSON = tasks.toJSON()
+    return view.render('tasks.index', { tasks: taskJSON })
   }
 
   //fonction permettant d'ajouter une tache
