@@ -7,7 +7,10 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
+import com.noyer.theo.todolist.DatabaseHandler
 import com.noyer.theo.todolist.R
+import com.noyer.theo.todolist.Task
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -20,6 +23,8 @@ class MainActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
 
         //initialisation des variables
         var mTaskInput = findViewById<EditText>(R.id.activity_main_task_input)
@@ -42,6 +47,17 @@ class MainActivity : AppCompatActivity(){
 
             }
         })
+
+        /*mValidButton.setOnClickListener({
+            if (mTaskInput.text.toString().isNotEmpty()){
+                var task = Task(mTaskInput.text.toString())
+                var db = DatabaseHandler(context)
+            } else {
+                Toast.makeText(this, "Please fill all data", Toast.LENGTH_SHORT.show())
+            }
+        })*/
+
+
 
         // appel de la fonction pour afficher la liste des taches
         addTasks()

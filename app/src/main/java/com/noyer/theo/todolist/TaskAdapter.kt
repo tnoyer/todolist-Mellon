@@ -28,7 +28,7 @@ class TaskAdapter(val items : ArrayList<String>, val context: Context) : Recycle
 
     // Binds each task in the ArrayList to a view
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder?.tvTaskType?.text = items.get(position)
+        holder.tvTaskType?.text = items.get(position)
     }
 }
 
